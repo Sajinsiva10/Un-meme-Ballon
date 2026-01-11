@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès aux grandes compétitions - Un même ballon, des chances inégales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚽</div>
+                <span>Un Même Ballon</span>
+            </a>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                     <li><a href="Disparites_pays.html">Disparités</a></li>
+                    <li><a href="Formation_Jeunes .html">Formation</a></li>
+                     <li><a href="Grandes_Compétitions.html">Compétitions</a></li>
+                    <li><a href="Initiatives.html">Initiatives</a></li>
+                    <li><a href="Apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-secondary">
+        <div class="container hero-content">
+            <h1>Accès aux grandes compétitions</h1>
+            <p>Explorez les obstacles et les inégalités qui existent dans le parcours de qualification pour les tournois internationaux.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Disparités de qualification</h2>
+            <p>Les places allouées à chaque continent ne reflètent pas toujours leur population ou leur nombre de pays.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-text">Des places pour l'Europe (10% population mondiale)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15%</div>
+                    <div class="stat-text">Des places pour l'Afrique (17% population mondiale)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12%</div>
+                    <div class="stat-text">Des places pour l'Asie (60% population mondiale)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Systèmes de qualification par continent</h2>
+            <p>Sélectionnez un continent pour découvrir son système de qualification en détail.</p>
+            
+            <form class="comparison-form" id="continentForm">
+                <div class="form-intro">
+                    <h3>Explorer les qualifications</h3>
+                    <p>Chaque confédération a ses propres règles, créant des difficultés inégales selon l'origine des équipes.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="continent">Choisissez un continent</label>
+                    <select class="form-control" id="continent" required>
+                        <option value="">Sélectionnez un continent</option>
+                        <option value="europe">Europe (UEFA)</option>
+                        <option value="afrique">Afrique (CAF)</option>
+                        <option value="asie">Asie (AFC)</option>
+                        <option value="amerique-sud">Amérique du Sud (CONMEBOL)</option>
+                        <option value="amerique-nord">Amérique du Nord (CONCACAF)</option>
+                        <option value="oceanie">Océanie (OFC)</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn">Afficher les détails</button>
+                </div>
+            </form>
+
+            <div class="comparison-results" id="continentResults" style="display: none;">
+                <div class="country-card">
+                    <div class="country-header" id="continentName">Europe (UEFA)</div>
+                    <div class="country-body">
+                        <div class="stat-row">
+                            <div class="stat-label">Places en Coupe du Monde</div>
+                            <div class="stat-value high" id="places">13 places</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Nombre de pays participants</div>
+                            <div class="stat-value" id="countries">55 pays</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Pourcentage de qualification</div>
+                            <div class="stat-value" id="percentage">24%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-card">
+                    <div class="page-content">
+                        <h3 class="page-title">Système de qualification</h3>
+                        <div class="page-description" id="qualificationSystem">
+                            <p><strong>Phase de groupes :</strong></p>
+                            <p>• Les équipes sont réparties en 10 groupes</p>
+                            <p>• Les vainqueurs de chaque groupe se qualifient directement</p>
+                            
+                            <p><strong>Barrages :</strong></p>
+                            <p>• Les 10 deuxièmes de groupe participent aux barrages</p>
+                            <p>• 2 meilleures équipes de la Ligue des Nations les rejoignent</p>
+                            <p>• 3 mini-tournois désignent 3 qualifiés supplémentaires</p>
+                            
+                            <p><strong>Résultat :</strong></p>
+                            <p>• 13 places sur 32 équipes en Coupe du Monde</p>
+                            <p>• Environ 40% des places pour 10% de la population mondiale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Obstacles financiers</h2>
+            <p>Les coûts de qualification varient énormément selon les continents et pénalisent les pays les plus pauvres.</p>
+            
+            <div class="comparison-grid">
+                <div class="country-card">
+                    <div class="country-header">Pays Européens</div>
+                    <div class="country-body">
+                        <div class="stat-row">
+                            <div class="stat-label">Matchs de qualification</div>
+                            <div class="stat-value high">8-10 matchs</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Déplacements moyens</div>
+                            <div class="stat-value high">2 000 km</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Coût estimé</div>
+                            <div class="stat-value high">500 000 €</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Infrastructures</div>
+                            <div class="stat-value high">Excellentes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="country-header">Pays Africains</div>
+                    <div class="country-body">
+                        <div class="stat-row">
+                            <div class="stat-label">Matchs de qualification</div>
+                            <div class="stat-value low">12-14 matchs</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Déplacements moyens</div>
+                            <div class="stat-value low">5 000 km</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Coût estimé</div>
+                            <div class="stat-value low">1 200 000 €</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">Infrastructures</div>
+                            <div class="stat-value low">Variables</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Impact des inégalités</h2>
+            <p>Ces disparités ont des conséquences directes sur la représentation mondiale au plus haut niveau.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">2,4×</div>
+                    <div class="stat-text">Plus de chances pour un pays européen de se qualifier</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">54</div>
+                    <div class="stat-text">Pays africains pour 5 places seulement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-text">Qualification directe garantie pour l'Océanie</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Propositions d'amélioration</h2>
+            <p>Des solutions existent pour rendre l'accès aux compétitions plus équitable à l'échelle mondiale.</p>
+            
+            <div class="pages-grid">
+                <div class="page-card">
+                    <div class="page-image">
+                        <!-- Ici tu peux insérer ton image pour "Redistribution des places" -->
+                        <img src="/img/redistribution_places.png" alt="Redistribution des places">
+                    </div>
+                    <div class="page-content">
+                        <h3 class="page-title">Redistribution des places</h3>
+                        <p class="page-description">Réajuster le nombre de places selon la population et le développement du football de chaque continent pour plus d'équité.</p>
+                        <a href="https://www.chroniquesbleues.fr/La-Coupe-du-monde-ideale-de-Matthieu-Delahais" class="page-link"  target="_blank">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="page-card">
+                    <div class="page-image">
+                        <!-- Ici tu peux insérer ton image pour "Aide financière" -->
+                        <img src="/img/aide_financiere.jpeg"alt="Aide financière">
+                    </div>
+                    <div class="page-content">
+                        <h3 class="page-title">Aide financière</h3>
+                        <p class="page-description">Créer un fonds de soutien FIFA pour aider les pays en développement à couvrir les frais de qualification.</p>
+                        <a href="https://inside.fifa.com/fr/advancing-football/fifa-forward/fifa-forward-report#pr%C3%A9sentation" class="page-link"  target="_blank">En savoir plus</a>
+                    </div>
+
+                </div>
+
+                <div class="page-card">
+                    <div class="page-image">
+                        <!-- Ici tu peux insérer ton image pour "Qualification centralisée" -->
+                        <img src="/img/qualification_centralisee.png" alt="Qualification centralisée">
+                    </div>
+                    <div class="page-content">
+                        <h3 class="page-title">Qualification centralisée</h3>
+                        <p class="page-description">Organiser des tournois de qualification dans des lieux neutres pour réduire les coûts de déplacement.</p>
+                        <a href="https://conseils.casalsport.com/10701/#section_2" class="page-link"  target="_blank">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Un Même Ballon</h3>
+                    <p>Explorez les inégalités dans le monde du football et les initiatives qui cherchent à créer un terrain de jeu plus équitable pour tous.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                     <ul>
+                        <li><a href="Accueil.html">Accueil</a></li>
+                        <li><a href="Disparites_pays.html">Disparités</a></li>
+                        <li><a href="Formation_Jeunes .html">Formation</a></li>
+                        <li><a href="Grandes_Compétitions.html">Compétitions</a></li>
+                        <li><a href="Initiatives.html">Initiatives</a></li>
+                        <li><a href="Apropos.html">À propos</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Un Même Ballon. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Javascript/competitions.js"></script>
+</body>
+</html>

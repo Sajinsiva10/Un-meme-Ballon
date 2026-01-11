@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disparités entre pays - Un même ballon, des chances inégales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚽</div>
+                <span>Un Même Ballon</span>
+            </a>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="Disparites_pays.html">Disparités</a></li>
+                    <li><a href="Formation_Jeunes .html">Formation</a></li>
+                    <li><a href="Grandes_Compétitions.html">Compétitions</a></li>
+                    <li><a href="Initiatives.html">Initiatives</a></li>
+                    <li><a href="Apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-secondary">
+        <div class="container hero-content">
+            <h1>Disparités entre pays riches et pays pauvres</h1>
+            <p>Découvrez les écarts considérables en matière d'accès aux équipements, d'infrastructures et de budgets entre les différentes régions du monde.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Comparez deux pays</h2>
+            <p>Sélectionnez deux pays pour comparer leurs ressources footballistiques et comprendre les disparités existantes.</p>
+            
+            <form class="comparison-form" id="comparisonForm">
+                <div class="form-intro">
+                    <h3>Analysez les différences</h3>
+                    <p>Cet outil vous permettra de visualiser l'écart entre les nations en termes de ressources, d'infrastructures et de budgets alloués au football.</p>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country1">Premier pays</label>
+                        <select class="form-control" id="country1" required>
+                            <option value="">Sélectionnez un pays</option>
+                            <option value="france">France</option>
+                            <option value="allemagne">Allemagne</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="angleterre">Angleterre</option>
+                            <option value="italie">Italie</option>
+                            <option value="bresil">Brésil</option>
+                            <option value="argentine">Argentine</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="country2">Second pays</label>
+                        <select class="form-control" id="country2" required>
+                            <option value="">Sélectionnez un pays</option>
+                            <option value="haiti">Haïti</option>
+                            <option value="rdcongo">RD Congo</option>
+                            <option value="cameroun">Cameroun</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="nepal">Népal</option>
+                            <option value="bolivie">Bolivie</option>
+                            <option value="nicaragua">Nicaragua</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="comparisonType">Type de comparaison</label>
+                        <select class="form-control" id="comparisonType">
+                            <option value="all">Tous les critères</option>
+                            <option value="budget">Budget annuel</option>
+                            <option value="infrastructure">Infrastructures</option>
+                            <option value="equipment">Équipements</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Année</label>
+                        <select class="form-control" id="year">
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Comparer</button>
+                </div>
+            </form>
+
+            <div class="comparison-results" id="comparisonResults">
+                <div class="comparison-grid">
+                    <div class="country-card">
+                        <div class="country-header">France</div>
+                        <div class="country-body">
+                            <div class="stat-row">
+                                <div class="stat-label">Budget annuel</div>
+                                <div class="stat-value high">250 millions €</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Stades de qualité FIFA</div>
+                                <div class="stat-value high">45</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Centres de formation</div>
+                                <div class="stat-value high">35</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Clubs professionnels</div>
+                                <div class="stat-value high">40</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Salaire moyen joueur pro</div>
+                                <div class="stat-value high">25 000 € / mois</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country-card">
+                        <div class="country-header">Haïti</div>
+                        <div class="country-body">
+                            <div class="stat-row">
+                                <div class="stat-label">Budget annuel</div>
+                                <div class="stat-value low">2 millions €</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Stades de qualité FIFA</div>
+                                <div class="stat-value low">1</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Centres de formation</div>
+                                <div class="stat-value low">2</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Clubs professionnels</div>
+                                <div class="stat-value low">8</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">Salaire moyen joueur pro</div>
+                                <div class="stat-value low">500 € / mois</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Témoignages</h2>
+            <p>Découvrez les témoignages de footballeurs sur les disparités entre pays.</p>
+            
+            <div class="pages-grid">
+                <div class="page-card">
+                    <div class="page-image">
+                        <img src="/img/Jean_Kasongo.jpg" alt="Jean K.">
+                    </div>
+                    <div class="page-content">
+                        <h3 class="page-title">Jean K. - RD Congo</h3>
+                        <p class="page-description">"Quand je suis arrivé en Europe, j'ai été stupéfait par la qualité des installations. Dans mon pays, nous nous entraînions sur des terrains en terre avec des ballons usés. C'est un autre monde."</p>
+                    </div>
+                </div>
+
+
+                <div class="page-card">
+                    <div class="page-image">
+                        <img src="/img/Carlos_Trucco.jpg" alt="Carlos M.">
+                    </div>
+                    <div class="page-content">
+                        <h3 class="page-title">Carlos M. - Bolivie</h3>
+                        <p class="page-description">"Dans les grands pays européens, les jeunes sont repérés dès leur plus jeune âge. Dans des pays comme le mien, même les meilleurs restent dans l'ombre."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Données clés</h2>
+            <p>Découvrez les statistiques sur les disparités dans le football mondial.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">125×</div>
+                    <div class="stat-text">Écart de budget France vs Haïti</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">45×</div>
+                    <div class="stat-text">Différence de stades FIFA</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50×</div>
+                    <div class="stat-text">Écart salarial moyen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Un Même Ballon</h3>
+                    <p>Explorez les inégalités dans le monde du football et les initiatives qui cherchent à créer un terrain de jeu plus équitable pour tous.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                     <ul>
+                        <li><a href="Accueil.html">Accueil</a></li>
+                        <li><a href="Disparites_pays.html">Disparités</a></li>
+                        <li><a href="Formation_Jeunes .html">Formation</a></li>
+                        <li><a href="Grandes_Compétitions.html">Compétitions</a></li>
+                        <li><a href="Initiatives.html">Initiatives</a></li>
+                        <li><a href="Apropos.html">À propos</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Un Même Ballon. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Javascript/disparities.js"></script>
+</body>
+</html>
